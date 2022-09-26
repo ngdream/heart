@@ -11,7 +11,6 @@ class Server
 public:
     static std::string url;
     static void run(std::string url = "http://localhost:8000");
-    static void main();
     static std::string geturl();
     static std::string getconfig();
     static bool loadconfigfrom();

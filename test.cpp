@@ -1,6 +1,4 @@
-#include "server.h"
-#include "view.h"
-
+#include "heart.h"
 class Home : public View
 {
     Httpresponse get(Request request)
@@ -11,9 +9,7 @@ class Home : public View
 
 int main(int argc, char const *argv[])
 {
-    Url::add(new Home, "/jano", "bise");
 
     Server::run();
-
     return 0;
 }
