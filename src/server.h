@@ -3,6 +3,7 @@
 #include "mongoose.h"
 #include "defs.h"
 #include "response.h"
+#include "setup.h"
 
 #include "view.h"
 #include "url.h"

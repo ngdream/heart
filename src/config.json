@@ -1,0 +1,7 @@
+{
+"debug":"True",
+
+"templates":{
+"dirs":["template"]
+}
+}

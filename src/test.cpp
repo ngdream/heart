@@ -9,7 +9,8 @@ class Home : public View
 
 int main(int argc, char const *argv[])
 {
-
+    Url::add(new Home, "/", "home");
+    
     Server::run();
     return 0;
 }

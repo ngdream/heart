@@ -5,13 +5,8 @@
 #include "response.h"
 #include "view.h"
 #include "url.h"
+#include "template.h"
 
-class Heart
-{
-public:
-    int virtual main();
-};
-
-extern "C" void q();
+#define VERSION 1.0.0
 
 #endif

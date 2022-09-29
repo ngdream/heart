@@ -1,4 +1,0 @@
-#include <map>
-class Setup
-{
-};

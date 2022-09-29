@@ -5,7 +5,7 @@ class Bridje : public View
 {
     Httpresponse get(Request Request)
     {
-        return "my name is madara uchiwa";
+        return Template::render("index.html");
     }
 };
 
@@ -57,8 +57,10 @@ void Server::start_mg_server(struct mg_connection *c, int ev, void *ev_data, voi
 //
 void Server::run(std::string url)
 {
+    setup();
     struct mg_mgr mgr;
     Url::add(new Bridje, "/", "index");
+
     mg_mgr_init(&mgr);
     mg_http_listen(&mgr, url.c_str(), Server::start_mg_server, NULL);
     for (;;)
