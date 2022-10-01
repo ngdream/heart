@@ -21,8 +21,14 @@ Httpresponse Template::render(std::string path)
             t.seekg(0, std::ios::beg);
             buf = new char[length + 1];
             t.read(buf, length);
-            return Httpresponse(buf);
+            return renderstring(buf);
         }
     }
+    throw Http404();
     return Httpresponse("cannot load templates");
+}
+
+Httpresponse Template::renderstring(std::string buffer)
+{
+    return Httpresponse(buffer);
 }
