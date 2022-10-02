@@ -3,6 +3,8 @@
 
 #include <map>
 #include <vector>
+
+#include "exception.h"
 #include "defs.h"
 #include "response.h"
 
@@ -17,11 +19,6 @@ public:
     static Httpresponse renderstring(std::string buffer);
 
     friend void setup();
-};
-
-class Http404 : public std::exception
-{
-    const char *what() { return "cannot find template"; }
 };
 
 #endif

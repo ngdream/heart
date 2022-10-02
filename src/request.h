@@ -2,5 +2,6 @@
 
 class Request
 {
-    
+private:
+    std::string method;
 };

@@ -11,6 +11,10 @@ class Httpresponse
 public:
     Httpresponse(std::string content, std::string type);
     Httpresponse(std::string content = "thanks for using bridje");
+    Httpresponse(int content);
+    Httpresponse(bool content);
+    Httpresponse(const char *content);
+
     Httpresponse(const char *content);
 
     std::string contenttype();

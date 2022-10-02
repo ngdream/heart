@@ -4,6 +4,8 @@
 #include "defs.h"
 #include "response.h"
 #include "setup.h"
+#include "exception.h"
+
 
 #include "view.h"
 #include "url.h"
